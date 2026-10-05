@@ -8,7 +8,7 @@ app.use(express.json()); // JSON 데이터 파싱
 
 
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
   res.send("Server is running!");
@@ -58,6 +58,6 @@ app.get('/api/chats', async (req, res) => {
   }
 });
 
-app.listen(8000, () => {
-  console.log("서버가 http://localhost:8000 에서 실행 중입니다.");
+app.listen(3000, () => {
+  console.log("서버가 http://localhost:3000 에서 실행 중입니다.");
 });
