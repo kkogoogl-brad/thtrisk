@@ -7,7 +7,7 @@ app.use(cors()); // 프론트엔드 웹 앱의 접속 허용
 app.use(express.json()); // JSON 데이터 파싱
 
 // 1단계에서 복사한 본인의 MongoDB 주소로 변경 (아이디/비번 입력)
-const MONGO_URI = "mongodb+srv://<아이디>:<비밀번호>@cluster0.xxx.mongodb.net/myapp?retryWrites=true&w=majority";
+const MONGO_URI = "mongodb+srv://kkogoogl_db_user:wuu3m7ttfhqmLK89@cluster0.yxfm46y.mongodb.net/myapp?retryWrites=true&w=majority";
 
 mongoose.connect(MONGO_URI)
   .then(() => console.log("MongoDB 연결 성공!"))
