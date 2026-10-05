@@ -23,7 +23,7 @@ app.listen(PORT, () => {
 
 
 // 1단계에서 복사한 본인의 MongoDB 주소로 변경 (아이디/비번 입력)
-const MONGO_URI = "mongodb+srv://kkogoogl_db_user:wuu3m7TTfhqmLK89@cluster0.yxfm46y.mongodb.net/appName?retryWrites=true&w=majority";
+const MONGO_URI = "mongodb+srv://kkogoogl_db_user:Ke52ydrbgc6XsBO8@cluster0.yxfm46y.mongodb.net/appName?retryWrites=true&w=majority";
 
 mongoose.connect(MONGO_URI)
   .then(() => console.log("MongoDB 연결 성공!"))
