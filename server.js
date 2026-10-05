@@ -6,6 +6,22 @@ const app = express();
 app.use(cors()); // 프론트엔드 웹 앱의 접속 허용
 app.use(express.json()); // JSON 데이터 파싱
 
+
+
+const PORT = process.env.PORT || 3000;
+
+app.get("/", (req, res) => {
+  res.send("Server is running!");
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+
+
+
+
+
+
 // 1단계에서 복사한 본인의 MongoDB 주소로 변경 (아이디/비번 입력)
 const MONGO_URI = "mongodb+srv://kkogoogl_db_user:wuu3m7TTfhqmLK89@cluster0.yxfm46y.mongodb.net/appName?retryWrites=true&w=majority";
 
